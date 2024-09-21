@@ -95,18 +95,18 @@ elif grossEarnings > 70000:
     philHealthContribution = 0.05 * grossEarnings
 
 #Withholding Tax [Based: Date as of January 1, 2023]
-if grossEarnings < 20833:
-    withHoldingTax = 0.00
-elif 20833 <= grossEarnings <= 33332:
-    withHoldingTax = 0.15 * 20833
-elif 33333 <= grossEarnings <= 66666:
-    withHoldingTax = 8541 + 0.20 * 33333
-elif 66667 <= grossEarnings <= 166666:
-    withHoldingTax = 8541.80 + 0.25 * 66667
-elif 166667 <= grossEarnings <= 666666:
-    withHoldingTax = 33541.80 + 0.30 * 166667
-elif grossEarnings > 666667:
-    withHoldingTax = 183541.80 + 0.35 * 666667
+if grossEarnings < 10417:
+    withHoldingTax = 0
+elif 10417 <= grossEarnings <= 16666:
+    withHoldingTax = (grossEarnings - 10417) * 0.15
+elif 16667 <= grossEarnings <= 66666:
+    withHoldingTax = (grossEarnings - 16667) * 0.20 + 937.50
+elif 33333 <= grossEarnings <= 166666:
+    withHoldingTax = (grossEarnings - 33333) * 0.25 + 4270.70
+elif 83333 <= grossEarnings <= 666666:
+    withHoldingTax = (grossEarnings - 83333) * 0.30 + 16770.70
+elif grossEarnings > 333333:
+    withHoldingTax = (grossEarnings - 333333) * 0.35 + 91770.70
 
 totalDeductions = absences + tardiness + withHoldingTax + sssContribution + philHealthContribution + pagibigContribution
 netPay = grossEarnings - totalDeductions
