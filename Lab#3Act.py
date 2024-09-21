@@ -131,3 +131,5 @@ print(" | Philhealth Contribution: {:.2f}".format(philHealthContribution))
 print(" | Gross Earnings: {:.2f}".format(grossEarnings))
 print(" | Deductions: {:.2f}".format(totalDeductions))
 print(" | Net Pay: {:.2f}".format(netPay))
+
+#End.
