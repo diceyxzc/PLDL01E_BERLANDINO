@@ -23,7 +23,7 @@ class Employee_Info:
 class Employee_Salary:
     def __init__(self):
         self.sss_contribution = 0.00
-        self.hdmf_contribution = 0.00
+        self.hdmf_contribution = 100.00
         self.philhealth_contribution = 0.00
         self.tax_contribution = 0.00
         self.emp_tardiness = 0.00
