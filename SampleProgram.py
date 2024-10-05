@@ -9,7 +9,7 @@ class Employee:
         self.employee_code = input("Enter Employee Code: ")
         self.salary_cut_off = input("Enter Cut-off Date: ")
         self.emp_rate_per_hour = float(input("Employee Rate per Hour: "))
-        self.emp_num_of_hours_per_payday = int(input("Employee's number of hours worked per payday: "))
+        self.emp_num_of_hours_per_payday = int(input("Employee's Number of Hours Worked per Payday: "))
         self.emp_hour_overtime = float(input("Employee Overtime Hours: "))
         self.honorarium_pay = float(input("Employee Honorarium Pay: "))
         self.emp_num_of_absences = int(input("Employee Absences: "))
