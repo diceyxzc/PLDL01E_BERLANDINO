@@ -1,36 +1,33 @@
 import activity5
+
+
 class Student_Info_Input:
 
     def get_student_input(self):
         obj = activity5.Student_Info()
+        print("| STUDENT INFORMATION |")
         name = input("Student Name: ")
         course = input("Student Course: ")
         number = input("Student Number: ")
         academic_year = input("Academic Year: ")
         printed_date = input("Date Printed: ")
 
-        student_data = obj.get_student_data(name, course, number, academic_year, printed_date)
-        obj.display_student_data()
-
-
-class Course_Outline_Input:
-    def get_student_outline(self):
-        obj2 = activity5.Course_Outline()
-        units = int(input("Enter the Number of Subjects: "))
+        total_subjects = int(input("Enter the Number of Subjects: "))
         subjects = []
 
-        for i in range(units):
+        for i in range(total_subjects):
             subject = input(f"Enter Subject {i + 1}: ")
-            section = input(f"Enter Section for the Unit {i + 1}: ")
-            course_outline = activity5.Course_Outline()
-            course_outline.get_student_outline(section, subject, 1)
+            units = int(input(f"Enter No.s of Unit {i + 1}: "))
+            section = input(f"Enter Section for the Subject {i + 1}: ")
+            course_outline = activity5.Student_Info()
+            course_outline.get_course_outline(total_subjects, section, units, subject)
             subjects.append(course_outline)
 
-        obj2.display_student_outline(subjects)
+        student_data = obj.get_student_data(name, course, number, academic_year, printed_date)
+        obj.display_student_data()
+        obj.total_units_calculation(subjects)
+        obj.display_student_outline(subjects)
 
 
-a = Student_Info_Input()
-a.get_student_input()
-
-a = Course_Outline_Input()
-a.get_student_outline()
+student_info = Student_Info_Input()
+student_info.get_student_input()
