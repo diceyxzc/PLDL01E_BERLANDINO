@@ -1,6 +1,5 @@
 import activity5
 
-
 class Student_Info_Input:
 
     def get_student_input(self):
