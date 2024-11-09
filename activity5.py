@@ -56,7 +56,7 @@ class Student_Info:
         for i, course_outline in enumerate(subjects, start=1):
             print(
                 f"|\t  {course_outline.student_section:<{section_width}} \t  {course_outline.student_subject:<{subject_width}}\t\t\t\t\t\t  {course_outline.student_units}\t\t |")
-        print(f"|\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Units: {self.total_units:.0f} \t\t | ")
+        print(f"|\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Units: {self.total_units:.0f} \t | ")
         print("-" * width)
         print(f"| DATE PRINTED \t: {self.printed_date:<{date_width}} \t\t\t\t\t\t\t\t             |")
         print("-" * width)
