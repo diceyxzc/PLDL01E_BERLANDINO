@@ -10,7 +10,6 @@ window.geometry('1520x900')
 header = Frame(window, width=2000, height=100, bg='white')
 header.place(x=0, y=0)
 
-
 class design_gui_interface():
     def __int__(self, frame1):
         frame1 = ''

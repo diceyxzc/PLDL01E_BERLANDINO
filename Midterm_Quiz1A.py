@@ -7,7 +7,7 @@ class Biller_Input:
         obj = Midterm_Quiz1.Consumer_Info()
         print("| Consumer Information |")
         name = input("Consumer's Name: ")
-        number = int(input("Consumer's Account Number: "))
+        number = int(input("Consumer's Account Number:   "))
         street = input("Consumer's Street: ")
         barangay = input("Consumer's Barangay: ")
         city = input("Consumer's City: ")
